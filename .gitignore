@@ -107,3 +107,8 @@ ENV/
 
 # intellij
 .idea/
+
+# Kitchen
+Gemfile.lock
+.kitchen
+**/*.retry
