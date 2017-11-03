@@ -112,3 +112,5 @@ ENV/
 Gemfile.lock
 .kitchen
 **/*.retry
+.kitchen/
+.kitchen.local.yml
