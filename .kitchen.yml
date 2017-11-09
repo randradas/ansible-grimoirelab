@@ -7,7 +7,6 @@ provisioner:
   name: ansible_push
   chef_bootstrap_url: nil
   ansible_config: "test/ansible.cfg"
-  idempotency_test: true
   diff: true
 
 platforms:
