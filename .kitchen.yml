@@ -5,14 +5,21 @@ driver:
 
 provisioner:
   name: ansible_push
+  chef_bootstrap_url: nil
   ansible_config: "test/ansible.cfg"
   idempotency_test: true
   diff: true
 
 platforms:
   - name: ubuntu-16.04
+    driver:
+      provision_command:
+        - apt-get update -qq
+        - apt-get install python -qq
+      volume:
+        - $PWD/logs:/var/log/grimoirelab:rw
 
-verfier:
+verifier:
   name: inspec
 
 suites:

@@ -1,9 +1,9 @@
 ---
-- name: ansible-grimoirelab-installation
-  title: Ansible Grimoirelab installation
-  maintainer: Roberto Andradas Izquierdo <randradas@gmail.com>
-  summary: Ansible role for deployment of Grimoirelab
-  version: 0.0.1
-  supports:
-    - os-name: ubuntu
-      release: 16.04
+name: ansible-grimoirelab-installation
+title: Ansible Grimoirelab installation
+maintainer: Roberto Andradas Izquierdo <randradas@gmail.com>
+summary: Ansible role for deployment of Grimoirelab
+version: 0.0.1
+supports:
+  - os-name: ubuntu
+    release: 16.04
