@@ -4,14 +4,18 @@ driver:
   use_sudo: false
 
 provisioner:
-  name: ansible_playbook
-  hosts: localhost
-  require_ansible_repo: false
-  require_ansible_omnibus: true
-  ansible_version: 2.4.0.0
+  name: ansible_push
+  ansible_config: "test/ansible.cfg"
+  idempotency_test: true
+  diff: true
 
 platforms:
   - name: ubuntu-16.04
 
+verfier:
+  name: inspec
+
 suites:
   - name: default
+    provisioner:
+      playbook: "test/integration/default/ansible/playbook.yml"
