@@ -1,7 +1,8 @@
 ![TravisCI](https://travis-ci.org/randradas/ansible-grimoirelab.svg?branch=master)
 
 # ansible-grimoirelab
-Install grimoirelab components
+Install grimoirelab components. This role is not functional yet. Basic
+stuff will come soon.
 
 # Prepare to develop
 Clone this repo
